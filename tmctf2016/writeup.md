@@ -2,7 +2,7 @@
 モデム設定ファイルから対応しているLTEのバンドを探す問題
 
 ## 参考リンク
-[](http://blog.livedoor.jp/galaxy_lover/archives/38622700.html)
+[Galaxy S5(SM-G900F)のちょっとマニアックな情報: docomo LTEなど](http://blog.livedoor.jp/galaxy_lover/archives/38622700.html)
 
 # Writeup
 参考リンクを見たところ、6828 (0x1AAC)の値を見ればいい模様
