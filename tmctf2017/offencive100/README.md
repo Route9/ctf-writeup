@@ -42,7 +42,7 @@ src 192.168.30.251 dst 192.168.30.211
 ```
 
 ## 3. file_3を復号して通信を見る
-key.txtの情報を元に、IPSec-ESPのパケットを複合すると、以下の情報を取得しているTCP通信が見える  
+key.txtの情報を元に、IPSec-ESPのパケットを復号すると、以下の情報を取得しているTCP通信が見える  
 ```
 M4 Navy
 Reflector:C Thin, beta, I, IV, II (T M J F), Plugboard: L-X/A-C/B-Y
@@ -53,7 +53,7 @@ APZTQQHYCKDLQZRG is encrypted.
 ```
 
 ## 4. エニグマ暗号解読
-以下のサイトから、file_3の通信内容を元に`APZTQQHYCKDLQZRG`を複合してやる
+以下のサイトから、file_3の通信内容を元に`APZTQQHYCKDLQZRG`を復号してやる
 * [http://enigma.louisedade.co.uk/enigma.html](http://enigma.louisedade.co.uk/enigma.html)
 
 # Flag
